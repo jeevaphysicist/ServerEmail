@@ -14,7 +14,7 @@ let transporter = nodemailer.createTransport({
 router.post('/sendemail',(req,res)=>{
     let mailOptions = {
         from: process.env.email,
-        to: "jeevaphysicist@gmail.com",
+        to: process.env.Toemail,
         subject: `New Appointment from ${req.body.name}`,
         html: ` <h1>Contact Details</h1>
                 <div style="border: 2px solid; padding: 10px;">
