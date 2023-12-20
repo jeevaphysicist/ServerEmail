@@ -18,7 +18,7 @@ app.get('/',(req,res)=>{
     res.send("Server Successfully Running")
 })
 
-app.use("/relect",ReflectRoutes);
+app.use("/reflect",ReflectRoutes);
 
 
 app.listen(PORT,()=>{
