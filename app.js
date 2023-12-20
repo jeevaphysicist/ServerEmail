@@ -13,6 +13,11 @@ app.use(bodyParser.json({limit:"50mb"}));
 app.use(cors({ origin: allowedOrigins}));
 app.use(cors());
 app.use(bodyParser.json());
+
+app.get('/',(req,res)=>{
+    res.send("Server Successfully Running")
+})
+
 app.use("/relect",ReflectRoutes);
 
 
